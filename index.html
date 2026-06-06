@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Emanuele Bonardo – Junior IT & Cybersecurity Specialist. Portfolio professionale con progetti, competenze e contatti." />
+  <meta name="keywords" content="cybersecurity, IT specialist, Linux, networking, CompTIA Security+, portfolio, Roma" />
+  <meta name="author" content="Emanuele Bonardo" />
+  <meta property="og:title" content="Emanuele Bonardo | Junior IT & Cybersecurity Specialist" />
+  <meta property="og:description" content="Portfolio professionale di Emanuele Bonardo – Cybersecurity, Networking, Linux, Virtualizzazione." />
+  <meta property="og:type" content="website" />
+  <title>Emanuele Bonardo | Junior IT & Cybersecurity Specialist</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>EB<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#training" class="nav-link">Training</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="assets/Emanuele_Bonardo_CV.pdf" class="btn-cv" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =========================================================
+       HERO
+  ========================================================= -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="particleCanvas"></canvas>
+    </div>
+    <div class="hero-content container">
+      <p class="hero-greeting fade-up">Hello, I'm</p>
+      <h1 class="hero-name fade-up">Emanuele Bonardo</h1>
+      <h2 class="hero-title fade-up">
+        Junior IT &amp; <span class="accent">Cybersecurity</span> Specialist
+      </h2>
+      <p class="hero-sub fade-up">
+        <span class="mono">Cyber Security Specialist Student</span>
+        &nbsp;|&nbsp;
+        <span class="mono">CompTIA Security+ (In Preparation)</span>
+        &nbsp;|&nbsp;
+        <span class="mono">Linux • Networking • Virtualization</span>
+      </p>
+      <div class="hero-cta fade-up">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-folder-open"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Contact Me
+        </a>
+      </div>
+      <div class="hero-location fade-up">
+        <i class="fas fa-map-marker-alt"></i> Roma, Italia
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- =========================================================
+       ABOUT
+  ========================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 /</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Sono uno studente in formazione come <strong>Cyber Security Specialist</strong> con una forte passione per
+            la cybersecurity, le infrastrutture IT e il problem solving.
+          </p>
+          <p>
+            Sto sviluppando competenze pratiche attraverso laboratori, ambienti virtualizzati, networking,
+            Linux e attività di sicurezza informatica.
+          </p>
+          <p>
+            Il mio obiettivo è iniziare una carriera nel settore IT e Cybersecurity, continuando a crescere
+            sia dal punto di vista tecnico che professionale. Attualmente sono alla ricerca della mia prima esperienza professionale 
+            in ambito IT, supporto tecnico, sistemistica o cybersecurity.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Roma, Italia</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Cyber Security Specialist Student</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-shield-halved"></i>
+              <span>CompTIA Security+ Candidate</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Open to IT / SOC / Sysadmin roles</span>
+            </div>
+          </div>
+          <a href="assets/Emanuele_Bonardo_CV.pdf" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+
+        <div class="about-card reveal">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">whoami.sh</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> <span class="cmd">cat profile.json</span></p>
+              <pre class="terminal-output">{
+  <span class="key">"name"</span>: <span class="val">"Emanuele Bonardo"</span>,
+  <span class="key">"role"</span>: <span class="val">"Junior IT & Cyber Spec."</span>,
+  <span class="key">"location"</span>: <span class="val">"Roma, IT"</span>,
+  <span class="key">"status"</span>: <span class="val">"Seeking first role"</span>,
+  <span class="key">"focus"</span>: [
+    <span class="val">"Cybersecurity"</span>,
+    <span class="val">"Linux"</span>,
+    <span class="val">"Networking"</span>,
+    <span class="val">"Virtualization"</span>
+  ],
+  <span class="key">"cert"</span>: <span class="val">"CompTIA Sec+ (prep)"</span>,
+  <span class="key">"available"</span>: <span class="true">true</span>
+}</pre>
+              <p><span class="prompt">$</span> <span class="cursor-blink">█</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       EXPERIENCE
+  ========================================================= -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01.5 /</span>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Professional Experience &amp; Projects</p>
+      </div>
+
+      <div class="exp-counter reveal">
+        <span class="exp-count">3+</span>
+        <span class="exp-count-label">Professional Experiences</span>
+      </div>
+
+      <div class="timeline exp-timeline">
+
+        <!-- Experience 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content exp-card">
+            <div class="exp-card-top">
+              <div class="exp-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="exp-header-text">
+                <div class="timeline-header">
+                  <h3>Junior Software Developer</h3>
+                  <span class="timeline-badge badge-current">Current</span>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-company"><i class="fas fa-building"></i> HyBiz</span>
+                  <span class="exp-period"><i class="fas fa-calendar-alt"></i> August 2025 – Present</span>
+                </div>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Collaborazione allo sviluppo di soluzioni software e applicazioni web, partecipando alle
+              attività di progettazione, implementazione e miglioramento di funzionalità applicative.
+            </p>
+            <div class="exp-footer">
+              <div class="exp-skills">
+                <span>Software Development</span>
+                <span>Web Applications</span>
+                <span>Problem Solving</span>
+                <span>Team Collaboration</span>
+              </div>
+              <div class="exp-tech">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Web Development</span>
+                <span class="skill-tag">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content exp-card">
+            <div class="exp-card-top">
+              <div class="exp-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="exp-header-text">
+                <div class="timeline-header">
+                  <h3>Marketing &amp; Digital Operations Specialist</h3>
+                  <span class="timeline-badge badge-current">Current</span>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-company"><i class="fas fa-building"></i> Mucca Pazza</span>
+                  <span class="exp-period"><i class="fas fa-calendar-alt"></i> March 2025 – Present</span>
+                </div>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Gestione delle attività digitali del ristorante, analisi dei dati, reportistica e
+              supporto alle campagne marketing online.
+            </p>
+            <div class="exp-footer">
+              <div class="exp-skills">
+                <span>Digital Marketing</span>
+                <span>Analytics</span>
+                <span>KPI Monitoring</span>
+                <span>Reporting</span>
+              </div>
+              <div class="exp-tech">
+                <span class="skill-tag">Meta Business Suite</span>
+                <span class="skill-tag">Canva</span>
+                <span class="skill-tag">Excel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content exp-card">
+            <div class="exp-card-top">
+              <div class="exp-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="exp-header-text">
+                <div class="timeline-header">
+                  <h3>Team Coordinator &amp; Operations Supervisor</h3>
+                  <span class="timeline-badge badge-current">Current</span>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-company"><i class="fas fa-building"></i> Mucca Pazza</span>
+                  <span class="exp-period"><i class="fas fa-calendar-alt"></i> June 2025 – Present</span>
+                </div>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Coordinamento operativo di un team, organizzazione dei turni, gestione delle priorità
+              e supporto alla risoluzione delle problematiche operative.
+            </p>
+            <div class="exp-footer">
+              <div class="exp-skills">
+                <span>Team Leadership</span>
+                <span>Communication</span>
+                <span>Problem Solving</span>
+                <span>Operations Management</span>
+              </div>
+              <div class="exp-tech">
+                <span class="skill-tag">Team Coordination</span>
+                <span class="skill-tag">Customer Service</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SKILLS
+  ========================================================= -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 /</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Cybersecurity -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-shield-halved"></i>
+            <h3>Cybersecurity</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Information Security</span>
+            <span class="skill-tag">Network Security</span>
+            <span class="skill-tag">Security Fundamentals</span>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-network-wired"></i>
+            <h3>Networking</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">TCP/IP</span>
+            <span class="skill-tag">DNS</span>
+            <span class="skill-tag">DHCP</span>
+            <span class="skill-tag">VPN</span>
+            <span class="skill-tag">Routing & Switching Basics</span>
+          </div>
+        </div>
+
+        <!-- Systems -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-server"></i>
+            <h3>Systems</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Windows</span>
+            <span class="skill-tag">Active Directory Basics</span>
+            <span class="skill-tag">Virtualization</span>
+            <span class="skill-tag">VirtualBox</span>
+          </div>
+        </div>
+
+        <!-- Programming -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java Basics</span>
+            <span class="skill-tag">C</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-users"></i>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Adaptability</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PROJECTS
+  ========================================================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 /</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Personal Cybersecurity Lab</h3>
+          <p class="project-desc">
+            Laboratorio personale basato su macchine virtuali Linux e Windows utilizzato per esercitazioni di
+            networking, virtualizzazione e cybersecurity.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span>Linux</span>
+              <span>Windows</span>
+              <span>VirtualBox</span>
+              <span>Networking</span>
+            </div>
+            <span class="project-status status-ongoing">Ongoing</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">
+              <i class="fas fa-flag"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">CyberChallenge.IT Training</h3>
+          <p class="project-desc">
+            Partecipazione al programma nazionale CyberChallenge.IT con attività pratiche su sicurezza
+            informatica, networking, crittografia e challenge CTF.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span>Cybersecurity</span>
+              <span>Networking</span>
+              <span>CTF</span>
+            </div>
+            <span class="project-status status-done">Completed</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Email Assistant</h3>
+          <p class="project-desc">
+            Sistema di classificazione email e generazione automatica di bozze di risposta sviluppato come
+            progetto personale.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Gmail API</span>
+              <span>Automation</span>
+            </div>
+            <span class="project-status status-progress">In Development</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Restaurant Management System</h3>
+          <p class="project-desc">
+            Gestionale per la gestione operativa di un ristorante sviluppato come progetto personale e
+            attualmente in fase di sviluppo.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>SQLite</span>
+            </div>
+            <span class="project-status status-progress">In Development</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       TRAINING & CERTIFICATIONS
+  ========================================================= -->
+  <section class="section section-alt" id="training">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 /</span>
+        <h2 class="section-title">Training &amp; Certifications</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Cyber Security Specialist</h3>
+              <span class="timeline-badge badge-progress">In Progress</span>
+            </div>
+            <p class="timeline-org"><i class="fas fa-building"></i> Labforweb</p>
+            <p class="timeline-desc">
+              Formazione professionale focalizzata su sicurezza informatica, reti, sistemi operativi,
+              vulnerability assessment e best practice di sicurezza.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>CompTIA Security+</h3>
+              <span class="timeline-badge badge-prep">In Preparation</span>
+            </div>
+            <p class="timeline-org"><i class="fas fa-certificate"></i> CompTIA</p>
+            <p class="timeline-desc">
+              Certificazione internazionale in cybersecurity. Studio attivo di network security,
+              cryptography, threats, vulnerabilities e incident response.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>CyberChallenge.IT</h3>
+              <span class="timeline-badge badge-done">Completed</span>
+            </div>
+            <p class="timeline-org"><i class="fas fa-flag"></i> CyberChallenge.IT – National Program</p>
+            <p class="timeline-desc">
+              Programma nazionale di formazione in cybersecurity con challenge pratiche su CTF,
+              networking, crittografia e sicurezza delle applicazioni.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT
+  ========================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 /</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-intro reveal">
+          <h3>Let's connect</h3>
+          <p>
+            Sono aperto a opportunità in ambito IT, Cybersecurity, supporto tecnico e sistemistica.
+            Non esitare a contattarmi.
+          </p>
+        </div>
+
+        <div class="contact-links reveal">
+
+          <a href="https://www.linkedin.com/in/emanuele-bonardo-eb04" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">www.linkedin.com/in/emanuele-bonardo-eb04</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square contact-arrow"></i>
+          </a>
+
+          <a href="https://github.com/Emanuele-bonny" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon github">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">www.github.com/Emanuele-bonny</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square contact-arrow"></i>
+          </a>
+
+          <a href="mailto:bonardoemanuele@gmail.com" class="contact-card">
+            <div class="contact-icon email">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">bonardoemanuele@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square contact-arrow"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        <span class="mono">&lt;</span>
+        Designed &amp; built by Emanuele Bonardo
+        <span class="mono">/&gt;</span>
+      </p>
+      <p class="footer-sub">Roma, Italia · 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
