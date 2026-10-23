@@ -785,6 +785,48 @@ img { max-width: 100%; display: block; }
 .status-done     { background: rgba(34,197,94,0.15);  color: var(--green); }
 .status-progress { background: rgba(245,158,11,0.15); color: var(--yellow); }
 
+/* Featured project */
+.project-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  border-color: var(--accent);
+  box-shadow: var(--shadow-glow);
+}
+.featured-text { display: flex; flex-direction: column; }
+.featured-badges { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+.featured-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent-light);
+  background: var(--accent-dim);
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+.project-featured .project-title { font-size: 1.35rem; }
+.featured-list {
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.featured-list li { padding-left: 16px; position: relative; margin-bottom: 6px; }
+.featured-list li::before { content: '›'; position: absolute; left: 0; color: var(--accent); }
+.featured-list strong { color: var(--text-primary); font-weight: 600; }
+.featured-diagram {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.featured-diagram svg { width: 100%; height: auto; display: block; }
+@media (max-width: 900px) {
+  .project-featured { grid-template-columns: 1fr; }
+}
+
 /* =========================================================
    TIMELINE (Training)
 ========================================================= */
